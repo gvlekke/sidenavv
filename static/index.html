@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SideNavv</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./esm/bundle.esm.css" />
+    <style>
+      .sidenavv {
+        top: 6.3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="sidenavv-toggle">
+        <div class="hamburger"></div>
+      </div>
+      <h1>Sidenavv</h1>
+    </header>
+    <div class="sidenavv"></div>
+    <p>Hi Sidenavvies, Whats up?</p>
+    <script type="module">
+      import SideNavv from './esm/bundle.esm.js';
+      const sideNavv = new SideNavv({
+        menuItems: [
+          {
+            label: 'Home',
+            link: '/',
+            items: []
+          },
+          {
+            label: 'About us',
+            link: '/',
+            items: [
+              {
+                label: 'this is a sub label',
+                link: '/',
+                items: []
+              },
+              {
+                label: 'this is a second sub label',
+                link: '/',
+                items: []
+              }
+            ]
+          }
+        ]
+      });
+    </script>
+    <!-- website specific js -->
+    <script src="./index.js"></script>
+  </body>
+</html>

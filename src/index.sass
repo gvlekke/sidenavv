@@ -1,0 +1,23 @@
+@import 'vars'
+@import 'page'
+@import 'sidenavv-item'
+  
+.sidenavv
+  position: absolute
+  top: 1rem
+  left: 0
+  bottom: 0
+  width: 80%
+  transition: all 0.3s ease-in
+  background: $main-background-color
+  overflow: hidden
+  transform: translateX(-100%)
+  &--open
+    transform: translateX(0)
+
+  .sidenavv__items
+    ul
+      list-style: none
+      padding: 0
+      font-size: 2rem
+

@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuBuilder build should return a ul with a collection of li main elements 1`] = `
+"<nav class=\\"sidenavv__items\\"><ul>
+      <li class=\\"sidenavv__item \\">
+        <span class=\\"sidenavv__item__label\\">this is a label</span>
+      
+      </li>
+    
+      <li class=\\"sidenavv__item \\">
+        <span class=\\"sidenavv__item__label\\">this is a second label</span>
+      
+      </li>
+    </ul></nav>"
+`;
+
+exports[`MenuBuilder buildItem should return one li item 1`] = `
+"
+      <li class=\\"sidenavv__item \\">
+        <span class=\\"sidenavv__item__label\\">this is a label</span>
+      
+      </li>
+    "
+`;
+
+exports[`MenuBuilder buildItem should return one li item with subitems 1`] = `
+"
+      <li class=\\"sidenavv__item sidenavv__item--has-sub\\">
+        <span class=\\"sidenavv__item__label\\">this is a label</span>
+      
+        <div class=\\"sidenavv__item__submenu-container\\">
+          <ul>
+      <li class=\\"sidenavv__item \\">
+        <span class=\\"sidenavv__item__label\\">this is a sub label</span>
+      
+      </li>
+    
+      <li class=\\"sidenavv__item \\">
+        <span class=\\"sidenavv__item__label\\">this is a second sub label</span>
+      
+      </li>
+    </ul>
+        </div>
+      
+      </li>
+    "
+`;
+
+exports[`MenuBuilder buildItems should return a collection of li elements 1`] = `
+"<ul>
+      <li class=\\"sidenavv__item \\">
+        <span class=\\"sidenavv__item__label\\">this is a label</span>
+      
+      </li>
+    
+      <li class=\\"sidenavv__item \\">
+        <span class=\\"sidenavv__item__label\\">this is a second label</span>
+      
+      </li>
+    </ul>"
+`;
